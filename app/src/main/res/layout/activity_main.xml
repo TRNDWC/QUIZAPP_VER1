@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent "
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="QUIZ APP!!!"
+        android:layout_marginBottom="20sp"
+        android:textColor="#14213d"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#CBFFFFFF"
+        app:cardCornerRadius="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent "
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="WELCOME"
+                android:textColor="#14213d"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent "
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16sp"
+                android:text="Please enter your name"
+                android:textColor="#14213d"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="name"
+                    android:inputType="textCapWords"
+                    android:textColor="#14213d"
+                    tools:ignore="HardcodedText">
+                </androidx.appcompat.widget.AppCompatEditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent "
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="START"
+                android:gravity="center"
+                tools:ignore="HardcodedText">
+            </Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/quitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#99F44336"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="35dp"
+        android:text="quit"
+        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        tools:ignore="HardcodedText">
+    </Button>
+</LinearLayout>
